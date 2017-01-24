@@ -2,7 +2,7 @@
   "name": "jsx-beautify",
   "displayName": "jsx-beautify",
   "description": "I am still working on it. So please do not download!!",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "publisher": "gogocrow",
   "engines": {
     "vscode": "^1.5.0"
@@ -11,7 +11,7 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:extension.sayHello"
+    "*"
   ],
   "main": "./extension",
   "contributes": {
@@ -20,9 +20,19 @@
       "path": "./snippets/javascriptreact.json"
     }],
     "commands": [{
-      "command": "extension.sayHello",
-      "title": "Hello World"
-    }]
+      "command": "gogocrow.beautify",
+      "title": "Beautify File"
+    }],
+    "configuration": {
+      "title": "jsx-beautify configuration",
+      "properties": {
+        "gogocrow.beautify.jsbeautifyrc": {
+          "description": "Specifies the path where the jsbeautifyrc file.",
+          "type": "string",
+          "default": "" 
+        }
+      }
+    }
   },
   "scripts": {
     "postinstall": "node ./node_modules/vscode/bin/install",
