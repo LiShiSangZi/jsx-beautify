@@ -2,10 +2,10 @@
   "name": "jsx-beautify",
   "displayName": "jsx-beautify",
   "description": "I am still working on it. So please do not download!!",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "publisher": "gogocrow",
   "engines": {
-    "vscode": "^1.5.0"
+    "vscode": "^1.10.0"
   },
   "categories": [
     "Other"
@@ -14,6 +14,10 @@
     "*"
   ],
   "main": "./extension",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LiShiSangZi/jsx-beautify"
+  },
   "contributes": {
     "snippets": [{
       "language": "javascriptreact",
@@ -23,13 +27,20 @@
       "command": "gogocrow.beautify",
       "title": "Beautify File"
     }],
+    "keybindings": [{
+      "mac": "cmd+m",
+      "win": "ctrl+m",
+      "linux": "ctrl+m",
+      "key": "ctrl+m",
+      "command": "gogocrow.beautify"
+    }],
     "configuration": {
       "title": "jsx-beautify configuration",
       "properties": {
         "gogocrow.beautify.jsbeautifyrc": {
           "description": "Specifies the path where the jsbeautifyrc file.",
           "type": "string",
-          "default": "" 
+          "default": ""
         }
       }
     }

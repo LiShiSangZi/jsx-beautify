@@ -4,33 +4,37 @@ JSX-beautify is used to beautify JSX code.
 
 ## Features
 
-Beautify JSX-Beautify.
-
-> Tip: I will make it better soon.
+Beautify your JSX files.
+You can speicific a global rc file to save your beautify settings.
+You can use hot key Ctrl+M (Command+M) to beautify your JSX file.
 
 ## Requirements
 
-None
+VSC 1.6 and above.
 
 ## Extension Settings
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
+Add a global settings:
+* `gogocrow.beautify.jsbeautifyrc`: Set a global jsbeautifyrc file for some options.
 For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
-
-## Known Issues
-
-This is not ready for use...
-
-## Release Notes
-
-### 0.0.1
-
-Not ready...
-
------------------------------------------------------------------------------------------------------------
+```
+"gogocrow.beautify.jsbeautifyrc": "/Users/gogocrow/.jsbeautifyrc"
+```
+Here is a sample for the file content:
+```
+{
+  "end_with_newline": true,
+  "indent_size": 2,
+  "jsx": {
+    "alignWithFirstAttribute": false,
+    "bracepadding": false,
+    "braces": "knr",
+    "spaceclose": true,
+    "methodchain": "chain",
+    "objsort": "all",
+    "formatObject": "indent",
+    "ternaryline": true,
+    "wrap": 100
+  }
+}
+```
