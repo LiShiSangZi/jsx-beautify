@@ -1,7 +1,7 @@
 {
   "name": "jsx-beautify",
   "displayName": "jsx-beautify",
-  "description": "I am still working on it. So please do not download!!",
+  "description": "Beautify your JSX code.",
   "version": "0.0.5",
   "publisher": "gogocrow",
   "engines": {

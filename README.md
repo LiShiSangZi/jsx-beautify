@@ -1,5 +1,7 @@
 # jsx-beautify README
 
+[![vscode version][vs-image]][vs-url]
+
 JSX-beautify is used to beautify JSX code.
 
 ## Features
@@ -38,3 +40,6 @@ Here is a sample for the file content:
   }
 }
 ```
+
+[vs-url]: https://marketplace.visualstudio.com/items?itemName=gogocrow.jsx-beautify
+[vs-image]: http://vsmarketplacebadge.apphb.com/version/gogocrow.jsx-beautify.svg
